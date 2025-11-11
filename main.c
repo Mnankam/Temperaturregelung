@@ -24,7 +24,7 @@
 #define BAUD 9600
 #define UBRR_VALUE ((F_CPU/16/BAUD)-1)
 
-// PID-Parameter (Beispielwerte, müssen abgestimmt werden!)
+// PID-Parameter 
 #define KP 2.0
 #define KI 0.5
 #define KD 1.0
@@ -45,7 +45,7 @@
 #define NIGHT_TARGET  18     // °C
 
 //------------------------------------------------------------
-// UART, ADC, PWM – wie gehabt, verbessert und kommentiert
+// UART, ADC, PWM 
 //------------------------------------------------------------
 void uart_init(void) {
 	UBRR0H = (uint8_t)(UBRR_VALUE>>8);
